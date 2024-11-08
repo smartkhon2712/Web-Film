@@ -1,6 +1,6 @@
 function Pagination() {
   return (
-    <div className="flex justify-center items-center mt-[100px]">
+    <div className="flex justify-center items-center mt-[50px]">
       <button className="p-2">
         <svg className="h-6 w-6 fill-grey" viewBox="0 0 20 20">
           <path d="M10 18l-8-8 8-8 1.414 1.414L4.828 10l6.586 6.586L10 18z" />

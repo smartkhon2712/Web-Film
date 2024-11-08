@@ -1,23 +1,31 @@
 import { Link } from "react-router-dom";
 import Tags from "./Tags";
 
-function Info() {
+function Info({ data }) {
+  const { genres } = data || {};
   return (
     <div className="mt-[20px]">
       <div className="flex flex-col gap-[20px]">
         <Link to="#">
           <span className="bg-silver text-white p-[5px] rounded-[5px] hover:bg-blue">
-            Ten dien vien
+            Tên Diễn Viên
           </span>
         </Link>
-        <Link to="#">
-          <span className="bg-silver text-white p-[5px] rounded-[5px] hover:bg-blue">
-            The loai
-          </span>
-        </Link>
+        <div className="flex gap-[5px]">
+          {genres &&
+            genres.map((genre) => {
+              return (
+                <Link to="#" key={genre.id}>
+                  <span className="bg-silver text-white p-[5px] rounded-[5px] hover:bg-blue">
+                    {genre.name}
+                  </span>
+                </Link>
+              );
+            })}
+        </div>
       </div>
       <div className="flex gap-[5px] items-center text-white mt-[20px]">
-        Tu khoa:
+        Từ khóa:
         <Tags />
       </div>
     </div>

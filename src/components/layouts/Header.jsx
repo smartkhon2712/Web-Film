@@ -19,19 +19,19 @@ function Header() {
           <nav>
             <ul className="flex gap-[30px] text-[20px] text-grey cursor-pointer">
               <Link className="min-w-[70px]" to="/category/phimmoi">
-                Phimmoi
+                Phim Mới
               </Link>
               <Link className="min-w-[70px]" to="/category/phimle">
-                Phim le
+                Phim Lẻ
               </Link>
               <Link className="min-w-[70px]" to="/category/phimbo">
-                Phim bo
+                Phim Bộ
               </Link>
               <Link className="min-w-[70px]" to="/category/theloai">
-                The loai
+                Thể Loại
               </Link>
               <Link className="min-w-[70px]" to="/category/quocgia">
-                Quoc gia
+                Quốc Gia
               </Link>
             </ul>
           </nav>
